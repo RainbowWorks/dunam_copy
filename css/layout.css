@@ -1,0 +1,10 @@
+.inner {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .inner {
+        margin: 0 1.6rem;
+    }
+}

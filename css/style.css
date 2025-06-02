@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #0077f5;
+
+    --body-color: #333333;
+
+    --line-color: #dddddd;
+    --white-color: #ffffff;
+
+    --backgroud-color: #f3f3f3;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#header {}
+
+#header .hd_wrap .inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 12rem;
+}
+
+#header .hd_wrap .inner .gnb>ul {
+    display: flex;
+    gap: 6.4rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#header .hd_wrap .utils {
+    display: flex;
+    gap: 8px;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_visual_slide {}
+
+.main_visual .main_visual_slide .itm {
+    position: relative;
+    height: calc(100vh - 12rem);
+    overflow: hidden;
+}
+
+.main_visual .main_visual_slide .itm .bg {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.main_visual .main_visual_slide .itm01 .bg {
+    background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm02 .bg {
+    background: url(../images/main_visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm03 .bg {
+    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 160rem;
+    width: 100%;
+
+    text-align: left;
+}
+
+.main_visual .slg strong {
+    color: var(--white-color);
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .7)
+}
+
+.main_visual .slg p {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .7)
+}
