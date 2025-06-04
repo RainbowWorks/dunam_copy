@@ -8,3 +8,23 @@
         margin: 0 1.6rem;
     }
 }
+
+.default {
+    padding: 8rem 0;
+}
+
+.default .title {
+    max-width: 160rem;
+    margin-bottom: 4rem;
+}
+
+.default .title h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.default .title p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+}

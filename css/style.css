@@ -98,3 +98,63 @@ body {
     line-height: 2.4rem;
     text-shadow: 0 0 4px rgba(0, 0, 0, .7)
 }
+
+.main_visual .page {
+    position: absolute;
+    max-width: 80rem;
+    left: 50%;
+    bottom: 8rem;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 4px;
+    z-index: 10;
+}
+
+.main_visual .page span {
+    position: relative;
+    flex: 1;
+    height: 3px;
+
+    border-radius: 4px;
+
+    background: var(--white-color);
+    opacity: 1;
+
+    overflow: hidden;
+}
+
+.main_visual .page span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 0;
+
+    background: var(--primary-color);
+}
+
+.main_visual .page span.swiper-pagination-bullet-active::before {
+    width: 100%;
+    transition: width 2.5s linear;
+}
+
+.main_banner {
+    position: relative;
+    background: url(../images/main_banner.jpg) no-repeat center center/cover;
+    height: 40rem;
+}
+
+.main_banner .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 세로 가운데 */
+    height: 100%;
+    text-align: left;
+}
+
+.main_banner .inner .title {
+    color: var(--white-color);
+}
