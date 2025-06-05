@@ -87,8 +87,15 @@
             </div>
         </section>
 
-        <section class="main_product">
-
+        <section class="main_product default">
+            <div class="inner">
+                <div class="title">
+                    <h2>PRODUCT</h2>
+                    <p>당사의 주요 제품들은 고객의 요구사항에 맞춰 철저한 검사 후 출하하고 있습니다.<br>
+                        또한 환경규제대상 물질은 전혀 사용하고 있지 않으며 항상 최고의 품질을 위해 노력하고 있습니다.</p>
+                    <a href="" class="default_btn">MORE VIEW </a>
+                </div>
+            </div>
         </section>
 
         <section class="main_banner default">
@@ -101,9 +108,64 @@
             </div>
         </section>
 
+        <section class="main_location default">
+            <div class="inner">
+                <div class="title">
+                    <h2>GLOBAL DOONAM OFFICE LOCATION</h2>
+                    <p>두남의 국내·외 사업장 위치를 소개합니다</p>
+                </div>
+                <ul class="tab">
+                </ul>
+                <li class="con on">한국본사</li>
+                <li class="con">베트남지사</li>
+                <div class="__map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1749101088369" class="root_daum_roughmap root_daum_roughmap_landing"
+                        style="width: 100%;">
+                    </div>
+
+                    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1749101088369",
+                            "key": "32zy937gj8e",
+                            // "mapWidth": "640",
+                            "mapHeight": "360"
+                        }).render();
+                    </script>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="inner">
+            <a href="/" class="logo">
+                <img src="./images/footer_logo.png" alt="">
+            </a>
+            <p>
+                <span>회사명 : 두남화학</span>
+                <span>주소 : 경남 김해시 어방동 1064-13번지</span>
+                <span>이메일 : dunam1988@dunamchem.com</span>
+            </p>
+            <p>
+                <span>전화 : 055-334-6568~9</span>
+                <span>팩스 : 055-321-1669</span>
+            </p>
+
+            <address>ⓒ 2021. DUNAM CHEMISTRY CO. ALL RIGHTS RESERVED.</address>
+        </div>
+    </footer>
 
 </body>
 

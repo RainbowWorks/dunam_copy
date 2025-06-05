@@ -140,6 +140,36 @@ body {
     transition: width 2.5s linear;
 }
 
+
+
+
+
+
+
+.main_product {
+    position: relative;
+}
+
+.main_product .title {
+    display: flex;
+}
+
+
+.main_product .title h2 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.main_product .title p {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.main_product .title .default_btn {}
+
+
+
 .main_banner {
     position: relative;
     background: url(../images/main_banner.jpg) no-repeat center center/cover;
@@ -157,4 +187,104 @@ body {
 
 .main_banner .inner .title {
     color: var(--white-color);
+
+}
+
+
+.main_banner .inner .title p {
+    margin-top: 2.4rem;
+    margin-left: 0;
+}
+
+
+.main_location {
+    position: relative;
+}
+
+.main_location .title {
+    display: flex;
+}
+
+
+.main_location .title h2 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.main_location .title p {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+
+.main_location .__map {
+    /* filter: grayscale(1); */
+    display: flex;
+    align-items: center;
+}
+
+.main_location .__map .cont {
+    display: none;
+}
+
+.main_location .__map .wrap_controllers {
+    display: none;
+}
+
+.main_location .__map .border2 {
+    display: block !important;
+    /* display none이여서 계급을 높여줬다. */
+    /* !important 모든것을 우선한다. inline, js 보다 더 우선된다. */
+}
+
+
+
+#footer {
+    padding: 6.4rem 0 6.4rem 0;
+    background: var(--backgroud-color);
+}
+
+#footer .logo {
+    margin-bottom: 4rem;
+}
+
+#footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer p {
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+#footer p span {
+    position: relative;
+}
+
+#footer p span~span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.6rem;
+    width: 1px;
+    height: 0.5em;
+
+    background: #333;
+
+    transform: translate(0, -50%);
+}
+
+#footer address {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+
+* {
+    outline: 1px solid tomato;
 }
